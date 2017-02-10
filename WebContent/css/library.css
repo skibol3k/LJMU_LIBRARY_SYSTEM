@@ -9,7 +9,7 @@ body {
 	font: 12pt arial, sans-serif;
 	background-color: #ffffff;
 	width: 900px;
-	height: 100%;
+	height: 900px;
 	margin: 10px auto auto auto;
 	padding: 10px;
 	border: 4px grey solid;
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-	text-shadow: 1px 1px #ecd0b0;
+	text-shadow: 1px 1px #c4c5c7;
 	font: bold 24pt arial, sans-serif;
 }
 
@@ -39,5 +39,5 @@ table.bordered td {
 
 table.bordered th {
 	border: 2px grey solid;
-	background-color: #ecd0b0;
+	background-color: #c4c5c7;
 }
