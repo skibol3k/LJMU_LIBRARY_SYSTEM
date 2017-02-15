@@ -1,3 +1,6 @@
+<jsp:useBean id="theLibrary" class="uk.ac.livjm.cms.TheLibrary" scope="session" /> 
+<jsp:setProperty property="*" name="theLibrary"/>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@page import="java.util.ArrayList" %>
@@ -7,15 +10,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Library Home Page</title>
+<title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="css/library.css" />
 </head>
 <body>
-<h1>Library Home Page</h1>
-<h2>Navigation</h2>
+
+<h1>Library Application</h1>
+<h2>List of users</h2>
 <table class="bordered">
-<tr><th><a href="login.jsp">Login</a> </th><th><a href="index_user.jsp">Add User</a> </th><th><a href="#">LINK3</a> </th></tr>
-<tr><th><a href="#">LINK4</a> </th><th><a href="#">Link5</a> </th><th><a href="#">LINK6</a> </th></tr>
+<tr><th>Name</th><th>Max books</th></tr>
+<%
+for (User aUser : theLibrary.getPeople()) {
+ out.println("<tr><td>" + aUser.getName() + "</td><td>" +
+aUser.getMaxBooks() + "</td></tr>");
+ }
+%>
 </table>
+<p /><a href="addUser.jsp">Add new user</a>
+
+
 </body>
 </html>
