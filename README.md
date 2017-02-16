@@ -1,4 +1,4 @@
-# LJMU LIBRARY SYSTEM
+# LJMU LIBRARY SYSTEM :books:
 ##How to run LJMU LIBRARY SYSTEM?
  * Go to [software folder](https://github.com/skibol3k/LJMU_LIBRARY_SYSTEM/tree/master/software) and download latest version of our Library aplication
  * Import .WAR file in to eclipse.
