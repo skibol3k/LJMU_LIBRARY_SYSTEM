@@ -1,9 +1,8 @@
-<jsp:useBean id="User" class="uk.ac.livjm.cms.User" scope="session" /> 
-<jsp:setProperty property="*" name="User"/>
+<jsp:useBean id="Book" class="uk.ac.livjm.cms.Book" scope="session" /> 
+<jsp:setProperty property="*" name="Book"/>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-
 <%@page import="java.util.ArrayList" %>
 <%@page import="uk.ac.livjm.cms.*" %>
 
@@ -17,14 +16,18 @@
 <body>
 
 <h1>Library Application</h1>
-<h2>Add User</h2>
-<form action="addUserDo.jsp" method="POST"> 
-<table> 
-	<tr><td>Name: </td><td><input type="text" name="tempName" ></td></tr> 
-	<tr><td>Max books: </td><td><input type="text" name="tempMaxBooks" size="10"></td></tr> 
-	<tr><td></td><td><input type="submit" value="Submit" /></td></tr> 
-</table> 
-</form> 
+<h2>List of Books</h2>
+<table class="bordered">
+<tr><th>Author</th><th>Title</th></tr>
+<%
+
+ out.println("<tr><td>" + Book.getAuthor() + "</td><td>" +
+Book.getTitle() + "</td></tr>");
+ 
+%>
+</table>
+
+
 
 </body>
 </html>

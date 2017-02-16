@@ -3,7 +3,6 @@
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-
 <%@page import="java.util.ArrayList" %>
 <%@page import="uk.ac.livjm.cms.*" %>
 
@@ -17,14 +16,18 @@
 <body>
 
 <h1>Library Application</h1>
-<h2>Add User</h2>
-<form action="addUserDo.jsp" method="POST"> 
-<table> 
-	<tr><td>Name: </td><td><input type="text" name="tempName" ></td></tr> 
-	<tr><td>Max books: </td><td><input type="text" name="tempMaxBooks" size="10"></td></tr> 
-	<tr><td></td><td><input type="submit" value="Submit" /></td></tr> 
-</table> 
-</form> 
+<h2>List of Users</h2>
+<table class="bordered">
+<tr><th>Name</th><th>Max books</th></tr>
+<%
+
+ out.println("<tr><td>" + User.getName() + "</td><td>" +
+User.getMaxBooks() + "</td></tr>");
+ 
+%>
+</table>
+
+
 
 </body>
 </html>
