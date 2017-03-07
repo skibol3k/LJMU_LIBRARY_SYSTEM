@@ -22,8 +22,8 @@
 <%
 
  out.println("<tr><td>" + Book.getAuthor() + "</td><td>" +
-Book.getTitle() + "</td></tr>");
- 
+Book.getTitle() + "</td> </tr>");
+
 %>
 </table>
 

@@ -1,3 +1,6 @@
+<jsp:useBean id="Book" class="uk.ac.livjm.cms.Book" scope="session" /> 
+<jsp:setProperty property="*" name="Book"/>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@page import="java.util.ArrayList" %>
@@ -11,11 +14,18 @@
 <link rel="stylesheet" type="text/css" href="css/library.css" />
 </head>
 <body>
-<h1>Library Home Page</h1>
-<h2>Navigation</h2>
+<h1>Library </h1>
+<h2>Download</h2>
 <table class="bordered">
-<tr><th><a href="login.jsp">Login</a> </th><th><a href="addUser.jsp">Add User</a> </th><th><a href="book.jsp">List of books</a> </th></tr>
-<tr><th><a href="user.jsp">List of users</a> </th><th><a href="ebook.jsp">Download ebooks</a> </th><th><a href="#">LINK6</a> </th></tr>
+<tr><th>Author</th><th>Title</th> <th>Link</th></tr>
+<%
+
+ out.println("<tr><td>" + Book.getAuthor() + "</td><td>" +
+Book.getTitle() + "</td> </tr>");
+
+%>
+
 </table>
+<a href="http://pdf995.com/samples/pdf.pdf">Download</a>
 </body>
 </html>

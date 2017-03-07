@@ -1,5 +1,5 @@
-<jsp:useBean id="User" class="uk.ac.livjm.cms.User" scope="session" /> 
-<jsp:setProperty property="*" name="User"/>
+<jsp:useBean id="theLibrary" class="uk.ac.livjm.cms.TheLibrary" scope="session" /> 
+<jsp:setProperty property="*" name="theLibrary"/>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -15,19 +15,17 @@
 </head>
 <body>
 
-<h1>Library Application</h1>
-<h2>List of Users</h2>
+<h2>Users list</h2>
 <table class="bordered">
 <tr><th>Name</th><th>Max books</th></tr>
 <%
-
- out.println("<tr><td>" + User.getName() + "</td><td>" +
-User.getMaxBooks() + "</td></tr>");
- 
+for (User aUser : theLibrary.getPeople()) {
+ out.println("<tr><td>" + aUser.getName() + "</td><td>" +
+aUser.getMaxBooks() + "</td></tr>");
+ }
 %>
+
 </table>
-
-
-
+<a href="index.jsp">Return to main page</a>
 </body>
 </html>
