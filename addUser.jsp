@@ -20,11 +20,12 @@
 <h2>Add User</h2>
 <form action="addUserDo.jsp" method="POST"> 
 <table> 
-	<tr><td>Name: </td><td><input type="text" name="tempName" ></td></tr> 
-	<tr><td>Max books: </td><td><input type="text" name="tempMaxBooks" size="10"></td></tr> 
+	<tr><td>Name: </td><td><input type="text" name="tempName" maxlength="30" required="required" pattern="[A-Za-z]{1,32}" ></td></tr> 
+	<tr><td>Max books: </td><td><input type="number" name="tempMaxBooks" maxlength="1" required="required" min="1" max="5"></td></tr> 
 	<tr><td></td><td><input type="submit" value="Submit" /></td></tr> 
 </table> 
 </form> 
 
 </body>
 </html>
+
