@@ -28,6 +28,12 @@ aUser.getMaxBooks() + "</td></tr>");
 </table>
 <p /><a href="addUser.jsp">Add new user</a>
 
+<button onclick="goBack()">Go Back</button>
 
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 </body>
 </html>

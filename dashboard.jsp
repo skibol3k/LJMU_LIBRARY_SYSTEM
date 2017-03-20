@@ -11,7 +11,7 @@
 <h2>Navigation</h2>
 <table class="bordered">
 <tr><th><a href="login.jsp">Login as normal user</a> </th><th><a href="admin.jsp">Delete user database</a> </th><th><a href="admin.jsp"> Change name of the book</a> </th></tr>
-<tr><th><a href="user.jsp">List of users</a> </th><th><a href="#">Stop server</a> </th><th><a href="admin.jsp">Show active users</a> </th></tr>
+<tr><th><a href="user.jsp">List of users</a> </th><th><a href="addUser.jsp">Add user</a> </th><th><a href="admin.jsp">Show active users</a> </th></tr>
 </table>
 </body>
 </html>

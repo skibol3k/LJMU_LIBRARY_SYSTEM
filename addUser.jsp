@@ -25,7 +25,13 @@
 	<tr><td></td><td><input type="submit" value="Submit" /></td></tr> 
 </table> 
 </form> 
+<button onclick="goBack()">Go Back</button>
 
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 </body>
 </html>
 

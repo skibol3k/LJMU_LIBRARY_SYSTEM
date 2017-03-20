@@ -14,8 +14,8 @@
 <h1>Library Home Page</h1>
 <h2>Navigation</h2>
 <table class="bordered">
-<tr><th><a href="login.jsp">Login</a> </th><th><a href="addUser.jsp">Add User</a> </th><th><a href="book.jsp">List of books</a> </th></tr>
-<tr><th><a href="user.jsp">List of users</a> </th><th><a href="ebook.jsp">Download ebooks</a> </th><th><a href="#">LINK6</a> </th></tr>
+<tr><th><a href="login.jsp">Login</a> </th><th><a href="admin.jsp">Add User</a> </th><th><a href="book.jsp">List of books</a> </th></tr>
+<tr><th><a href="user.jsp">List of users</a> </th><th><a href="ebook.jsp">Download ebooks</a> </th><th><a href="admin.jsp">Admin Login</a> </th></tr>
 </table>
 </body>
 </html>
